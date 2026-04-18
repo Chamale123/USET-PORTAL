@@ -223,3 +223,18 @@ export default function Login() {
     </div>
   );
 }
+{/* --- USET Portal Gallery Start --- */}
+        <div className="mt-8 pt-6 border-t border-gray-100">
+          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4 text-center">
+            Campus & Innovation Labs
+          </h2>
+          <div className="grid grid-cols-2 gap-3">
+            <img src="/assets/WhatsApp Image 2026-04-18 at 15.53.38 (1).jpeg" alt="USET Campus" className="rounded-lg object-cover h-24 w-full shadow-sm" />
+            <img src="/assets/WhatsApp Image 2026-04-18 at 15.53.37.jpeg" alt="Electrical Lab" className="rounded-lg object-cover h-24 w-full shadow-sm" />
+            <img src="/assets/WhatsApp Image 2026-04-18 at 15.53.34.jpeg" alt="Mechanical Workshop" className="rounded-lg object-cover h-24 w-full shadow-sm" />
+            <img src="/assets/WhatsApp Image 2026-04-18 at 15.53.39 (1).jpeg" alt="Welding Section" className="rounded-lg object-cover h-24 w-full shadow-sm" />
+            <img src="/assets/WhatsApp Image 2026-04-18 at 15.53.38.jpeg" alt="Research Lab" className="rounded-lg object-cover h-24 w-full shadow-sm" />
+            <img src="/assets/WhatsApp Image 2026-04-18 at 15.53.39 (2).jpeg" alt="Innovation Lab" className="rounded-lg object-cover h-24 w-full shadow-sm" />
+          </div>
+        </div>
+        {/* --- USET Portal Gallery End --- */}
