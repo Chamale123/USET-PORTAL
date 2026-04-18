@@ -1,21 +1,44 @@
----
+{/* --- USET Portal Gallery Start --- */}
+        <div className="mt-8 pt-6 border-t border-gray-100">
+          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4 text-center">
+            Campus & Innovation Labs
+          </h2>
+          <div className="grid grid-cols-2 gap-3">
+            {/* Campus Main */}
+            <div className="relative group">
+              <img src="/assets/WhatsApp Image 2026-04-18 at 15.53.38 (1).jpeg" alt="USET Campus" className="rounded-lg object-cover h-24 w-full shadow-sm" />
+              <span className="text-[10px] text-gray-500 block text-center mt-1">Main Campus</span>
+            </div>
 
-## 🏛️ USET Portal: Campus & Lab Gallery
+            {/* Electrical Lab */}
+            <div className="relative group">
+              <img src="/assets/WhatsApp Image 2026-04-18 at 15.53.37.jpeg" alt="Electrical Lab" className="rounded-lg object-cover h-24 w-full shadow-sm" />
+              <span className="text-[10px] text-gray-500 block text-center mt-1">Electrical Engineering</span>
+            </div>
 
-| **Campus Entrance** | **Electrical Engineering** |
-|:---:|:---:|
-| ![Building](./assets/WhatsApp%20Image%202026-04-18%20at%2015.53.38%20(1).jpeg) | ![Electrical](./assets/WhatsApp%20Image%202026-04-18%20at%2015.53.37.jpeg) |
+            {/* Mechanical Workshop */}
+            <div className="relative group">
+              <img src="/assets/WhatsApp Image 2026-04-18 at 15.53.34.jpeg" alt="Mechanical Workshop" className="rounded-lg object-cover h-24 w-full shadow-sm" />
+              <span className="text-[10px] text-gray-500 block text-center mt-1">Mechanical Workshop</span>
+            </div>
 
-| **Mechanical Workshop** | **Welding Section** |
-|:---:|:---:|
-| ![Mechanical](./assets/WhatsApp%20Image%202026-04-18%20at%2015.53.34.jpeg) | ![Welding](./assets/WhatsApp%20Image%202026-04-18%20at%2015.53.39%20(1).jpeg) |
+            {/* Welding Section */}
+            <div className="relative group">
+              <img src="/assets/WhatsApp Image 2026-04-18 at 15.53.39 (1).jpeg" alt="Welding Section" className="rounded-lg object-cover h-24 w-full shadow-sm" />
+              <span className="text-[10px] text-gray-500 block text-center mt-1">Welding Station</span>
+            </div>
 
-| **Lab Research** | **Innovation Lab** |
-|:---:|:---:|
-| ![Lab 1](./assets/WhatsApp%20Image%202026-04-18%20at%2015.53.38.jpeg) | ![Innovation Lab](./assets/WhatsApp%20Image%202026-04-18%20at%2015.53.39%20(2).jpeg) |
+            {/* Research Lab */}
+            <div className="relative group">
+              <img src="/assets/WhatsApp Image 2026-04-18 at 15.53.38.jpeg" alt="Research Lab" className="rounded-lg object-cover h-24 w-full shadow-sm" />
+              <span className="text-[10px] text-gray-500 block text-center mt-1">Research & Science</span>
+            </div>
 
-| **Fluid Dynamics** |
-|:---:|
-| ![Lab 2](./assets/WhatsApp%20Image%202026-04-18%20at%2015.53.39.jpeg) |
-
----
+            {/* Innovation Lab (Previously 3D Printing) */}
+            <div className="relative group">
+              <img src="/assets/WhatsApp Image 2026-04-18 at 15.53.39 (2).jpeg" alt="Innovation Lab" className="rounded-lg object-cover h-24 w-full shadow-sm border-2 border-blue-100" />
+              <span className="text-[10px] text-blue-600 font-medium block text-center mt-1">Innovation Lab</span>
+            </div>
+          </div>
+        </div>
+        {/* --- USET Portal Gallery End --- */}
