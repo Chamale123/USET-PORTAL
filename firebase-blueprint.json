@@ -1,0 +1,103 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "A user of the university portal (student, applicant, lecturer, admin).",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "Firebase Auth UID" },
+        "email": { "type": "string", "format": "email" },
+        "name": { "type": "string" },
+        "role": { "type": "string", "enum": ["applicant", "student", "lecturer", "admin"] },
+        "studentId": { "type": "string", "description": "University assigned student ID (if applicable)" },
+        "department": { "type": "string" },
+        "level": { "type": "number", "description": "Academic level (e.g., 100, 200)" },
+        "phone": { "type": "string" },
+        "photoUrl": { "type": "string", "description": "Base64 encoded profile picture" },
+        "createdAt": { "type": "timestamp" }
+      },
+      "required": ["uid", "email", "name", "role", "createdAt"]
+    },
+    "Application": {
+      "title": "Application",
+      "description": "An admission application submitted by a prospective student.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "program": { "type": "string" },
+        "status": { "type": "string", "enum": ["pending", "approved", "rejected"] },
+        "previousSchool": { "type": "string" },
+        "grades": { "type": "string" },
+        "phoneNumber": { "type": "string" },
+        "dateOfBirth": { "type": "string" },
+        "address": { "type": "string" },
+        "qualification": { "type": "string", "enum": ["WASSCE", "Diploma", "HND"] },
+        "createdAt": { "type": "timestamp" }
+      },
+      "required": ["userId", "program", "status", "createdAt"]
+    },
+    "Course": {
+      "title": "Course",
+      "description": "An academic course offered by the university.",
+      "type": "object",
+      "properties": {
+        "courseCode": { "type": "string" },
+        "title": { "type": "string" },
+        "credits": { "type": "number" },
+        "lecturerId": { "type": "string" },
+        "department": { "type": "string" }
+      },
+      "required": ["courseCode", "title", "credits", "department"]
+    },
+    "Registration": {
+      "title": "Registration",
+      "description": "A student's registration for a specific course.",
+      "type": "object",
+      "properties": {
+        "studentId": { "type": "string" },
+        "courseId": { "type": "string" },
+        "semester": { "type": "string" },
+        "status": { "type": "string", "enum": ["registered", "dropped", "completed"] },
+        "createdAt": { "type": "timestamp" }
+      },
+      "required": ["studentId", "courseId", "semester", "status", "createdAt"]
+    },
+    "Result": {
+      "title": "Result",
+      "description": "A student's result for a specific course.",
+      "type": "object",
+      "properties": {
+        "studentId": { "type": "string" },
+        "courseId": { "type": "string" },
+        "courseCode": { "type": "string" },
+        "grade": { "type": "string" },
+        "score": { "type": "number" },
+        "semester": { "type": "string" },
+        "createdAt": { "type": "timestamp" }
+      },
+      "required": ["studentId", "courseId", "courseCode", "grade", "score", "semester", "createdAt"]
+    }
+  },
+  "firestore": {
+    "users/{userId}": {
+      "schema": "User",
+      "description": "Stores user profiles."
+    },
+    "applications/{applicationId}": {
+      "schema": "Application",
+      "description": "Stores admission applications."
+    },
+    "courses/{courseId}": {
+      "schema": "Course",
+      "description": "Stores available courses."
+    },
+    "registrations/{registrationId}": {
+      "schema": "Registration",
+      "description": "Stores student course registrations."
+    },
+    "results/{resultId}": {
+      "schema": "Result",
+      "description": "Stores student course results."
+    }
+  }
+}
