@@ -18,3 +18,15 @@ View your app in AI Studio: https://ai.studio/apps/9206a8af-9850-45fd-a043-0edbb
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+   ---
+
+## 🏛️ USET Campus & Portal Assets
+
+Welcome to the official portal project for the University of Applied Science, Engineering and Technology.
+
+### 📸 Campus Entrance
+![USET Campus Building](./assets/WhatsApp%20Image%202026-04-18%20at%2015.53.38%20(1).jpeg)
+
+### 🔗 Project Navigation
+* [Full Project Gallery](./information-USET/Project%20gallery.md)
+* [Security Policy](./SECURITY.md)
