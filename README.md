@@ -30,8 +30,6 @@ View your app in AI Studio: https://ai.studio/apps/9206a8af-9850-45fd-a043-0edbb
 |:---:|:---:|
 | ![Mechanical](./assets/WhatsApp%20Image%202026-04-18%20at%2015.53.34.jpeg) | ![Welding](./assets/WhatsApp%20Image%202026-04-18%20at%2015.53.39%20(1).jpeg) |
 
-| **Lab Research** | **3D Printing Lab** |
-|:---:|:---:|
 | **Lab Research** | **Innovation Lab** |
 |:---:|:---:|
 | ![Lab 1](./assets/WhatsApp%20Image%202026-04-18%20at%2015.53.38.jpeg) | ![Innovation Lab](./assets/WhatsApp%20Image%202026-04-18%20at%2015.53.39%20(2).jpeg) |
